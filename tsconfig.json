@@ -1,0 +1,35 @@
+{
+  // Opsi utama untuk mengatur perilaku TypeScript compiler
+  "compilerOptions": {
+    // Menentukan versi ECMAScript output (fitur JS modern)
+    "target": "ES2020",
+    // Library yang di-include, misal fitur ES2020
+    "lib": ["ES2020"],
+    // Sistem module yang digunakan (commonjs untuk Node.js)
+    "module": "commonjs",
+    // Cara TypeScript mencari module (node untuk Node.js)
+    "moduleResolution": "node",
+    // Folder utama source code TypeScript
+    "rootDir": "./src",
+    // Folder hasil build JavaScript
+    "outDir": "./dist",
+    // Mengaktifkan pengecekan type yang ketat
+    "strict": true,
+    // Agar bisa import default dari module CommonJS
+    "esModuleInterop": true,
+    // Memastikan penamaan file konsisten (case sensitive)
+    "forceConsistentCasingInFileNames": true,
+    // Melewati pengecekan type pada file library (mempercepat build)
+    "skipLibCheck": true,
+    // Path dasar untuk module resolution
+    "baseUrl": "./",
+    // Agar bisa import file JSON sebagai module
+    "resolveJsonModule": true,
+    // Menambahkan type definitions untuk Node.js
+    "types": ["node"]
+  },
+  // File/folder yang akan di-compile oleh TypeScript
+  "include": ["src/**/*"],
+  // File/folder yang tidak akan di-compile
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.spec.ts"]
+}
