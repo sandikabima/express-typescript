@@ -24,6 +24,10 @@
     // Path dasar untuk module resolution
     "baseUrl": "./",
     // Agar bisa import file JSON sebagai module
+    "paths": {
+      "./": ["src/*"],
+      "*": ["node_modules/*"]
+    },
     "resolveJsonModule": true,
     // Menambahkan type definitions untuk Node.js
     "types": ["node"]
